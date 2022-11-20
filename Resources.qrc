@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/trash.png</file>
+        <file>img/edit.png</file>
+        <file>img/about.png</file>
+        <file>img/diskette.png</file>
+        <file>img/folder.png</file>
+        <file>img/Ticket.png</file>
+        <file>img/CreateBtn.png</file>
+        <file>img/confetti-png.png</file>
+        <file>img/confetti.png</file>
+    </qresource>
+</RCC>

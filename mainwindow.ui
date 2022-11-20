@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>842</width>
+    <height>449</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>170</y>
+      <width>461</width>
+      <height>142</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>Megrim</family>
+         <pointsize>35</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Victor Hunt</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <family>Leelawadee UI</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Offers a thrilling experience by randomly picking a lucky winner with its prizes.</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="LabelTicket">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>10</y>
+      <width>301</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btCreate">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>330</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Leelawadee UI</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/img/img/CreateBtn.png);
+ background-position: center; /* Center the image */
+ background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; 
+background-color: transparent;
+text-align: left;
+padding-left: 36px;
+padding-bottom: 6px;
+color: #474A4A;
+visibility: none;
+</string>
+    </property>
+    <property name="text">
+     <string>Create</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LandingBackground">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>851</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>842</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
