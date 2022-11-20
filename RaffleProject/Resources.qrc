@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/trash.png</file>
+        <file>img/edit.png</file>
+        <file>img/about.png</file>
+        <file>img/diskette.png</file>
+        <file>img/folder.png</file>
+    </qresource>
+</RCC>
