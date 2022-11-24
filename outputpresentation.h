@@ -18,6 +18,8 @@ public:
 private slots:
     void on_btnEdit_clicked();
 
+    void on_themeSelection_currentIndexChanged(int index);
+
 private:
     Ui::OutputPresentation *ui;
 };

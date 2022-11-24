@@ -426,7 +426,11 @@
    </palette>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Victor Hunt</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Resources.qrc">
+    <normaloff>:/img/img/Ticket.png</normaloff>:/img/img/Ticket.png</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: #E2E2E2;</string>
@@ -434,10 +438,10 @@
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>830</x>
+     <x>910</x>
      <y>710</y>
-     <width>281</width>
-     <height>41</height>
+     <width>101</width>
+     <height>42</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
@@ -458,13 +462,18 @@
       <property name="cursor">
        <cursorShape>PointingHandCursor</cursorShape>
       </property>
+      <property name="toolTip">
+       <string>Quit</string>
+      </property>
       <property name="styleSheet">
        <string notr="true">border-radius: 5px;
 color: #46433C;
-background-color: #FFFFFF; </string>
+background-color: #FFFFFF; 
+qproperty-icon: url(:/img/img/sign-out.png);
+qproperty-iconSize: 30px 30px;</string>
       </property>
       <property name="text">
-       <string>Quit</string>
+       <string/>
       </property>
      </widget>
     </item>
@@ -485,40 +494,18 @@ background-color: #FFFFFF; </string>
       <property name="cursor">
        <cursorShape>PointingHandCursor</cursorShape>
       </property>
+      <property name="toolTip">
+       <string>Clear</string>
+      </property>
       <property name="styleSheet">
        <string notr="true">border-radius: 5px;
 color: #46433C;
-background-color: #FFFFFF; </string>
+background-color: #FFFFFF; 
+qproperty-icon: url(:/img/img/eraser.png);
+qproperty-iconSize: 40px 40px;</string>
       </property>
       <property name="text">
-       <string>Clear</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="btnStart">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="font">
-       <font>
-        <family>Leelawadee</family>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="cursor">
-       <cursorShape>PointingHandCursor</cursorShape>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: #FAC213;
-border-radius: 5px;
-color: #46433C;</string>
-      </property>
-      <property name="text">
-       <string>Start</string>
+       <string/>
       </property>
      </widget>
     </item>
@@ -563,7 +550,7 @@ color: #46433C;</string>
     <widget class="QLabel" name="title">
      <property name="geometry">
       <rect>
-       <x>100</x>
+       <x>250</x>
        <y>0</y>
        <width>231</width>
        <height>51</height>
@@ -603,8 +590,12 @@ color: #46433C;</string>
         <property name="cursor">
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
+        <property name="toolTip">
+         <string>Open</string>
+        </property>
         <property name="styleSheet">
-         <string notr="true">border: none;</string>
+         <string notr="true">border: none;
+color: #ffffff;</string>
         </property>
         <property name="text">
          <string/>
@@ -628,8 +619,12 @@ color: #46433C;</string>
         <property name="cursor">
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
+        <property name="toolTip">
+         <string>Save</string>
+        </property>
         <property name="styleSheet">
-         <string notr="true">border: none;</string>
+         <string notr="true">border: none;
+color: #ffffff;</string>
         </property>
         <property name="text">
          <string/>
@@ -653,8 +648,12 @@ color: #46433C;</string>
         <property name="cursor">
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
+        <property name="toolTip">
+         <string>Instructions</string>
+        </property>
         <property name="styleSheet">
-         <string notr="true">border: none;</string>
+         <string notr="true">border: none;
+color: #ffffff;</string>
         </property>
         <property name="text">
          <string/>
@@ -668,6 +667,19 @@ color: #46433C;</string>
        </widget>
       </item>
      </layout>
+    </widget>
+    <widget class="QLabel" name="logo">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>0</y>
+       <width>61</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
     </widget>
    </widget>
   </widget>
@@ -979,6 +991,9 @@ border-top-left-radius : 20px;</string>
       <pointsize>13</pointsize>
      </font>
     </property>
+    <property name="toolTip">
+     <string>Enter Name</string>
+    </property>
     <property name="styleSheet">
      <string notr="true">border: 1px solid #707070;
 border-radius: 15px;
@@ -1003,6 +1018,9 @@ padding-left: 15px;</string>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Add</string>
     </property>
     <property name="styleSheet">
      <string notr="true">border-radius: 20px;
@@ -1236,6 +1254,9 @@ border-top-left-radius : 20px;</string>
       <pointsize>13</pointsize>
      </font>
     </property>
+    <property name="toolTip">
+     <string>Enter Prize</string>
+    </property>
     <property name="styleSheet">
      <string notr="true">border: 1px solid #707070;
 border-radius: 15px;
@@ -1260,6 +1281,9 @@ padding-left: 15px;</string>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Add</string>
     </property>
     <property name="styleSheet">
      <string notr="true">border-radius: 20px;
@@ -1336,7 +1360,7 @@ background-color: transparent;</string>
     <widget class="QPushButton" name="PrizeEdit">
      <property name="geometry">
       <rect>
-       <x>250</x>
+       <x>290</x>
        <y>0</y>
        <width>35</width>
        <height>35</height>
@@ -1362,7 +1386,7 @@ background-color: #FAC213;</string>
     <widget class="QPushButton" name="PrizeDelete">
      <property name="geometry">
       <rect>
-       <x>290</x>
+       <x>250</x>
        <y>0</y>
        <width>35</width>
        <height>35</height>
@@ -1387,7 +1411,45 @@ background-color: #FEBDBD;</string>
     </widget>
    </widget>
   </widget>
+  <widget class="QPushButton" name="btnStart">
+   <property name="geometry">
+    <rect>
+     <x>1020</x>
+     <y>710</y>
+     <width>89</width>
+     <height>39</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>Leelawadee</family>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #FAC213;
+border-radius: 5px;
+color: #46433C;
+qproperty-icon: url(:/img/img/next.png);
+qproperty-iconSize: 20px 20px;</string>
+   </property>
+   <property name="text">
+    <string>Start</string>
+   </property>
+  </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

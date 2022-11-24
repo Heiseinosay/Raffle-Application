@@ -21,8 +21,13 @@ private slots:
 
     void on_btnQuit_clicked();
 
+    void on_btnInfromation_clicked();
+
+    void on_btnClear_clicked();
+
 private:
     Ui::InputForm *ui;
+
 };
 
 #endif // INPUTFORM_H

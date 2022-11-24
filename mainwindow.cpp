@@ -34,7 +34,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_btCreate_clicked()
 {
-    hide();
+    close();
     InputForm inputForm;
     inputForm.setModal(true);
     inputForm.exec();
