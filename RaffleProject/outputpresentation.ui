@@ -119,9 +119,9 @@ border-radius: 10px;</string>
   <widget class="QLabel" name="Congratulationsto">
    <property name="geometry">
     <rect>
-     <x>470</x>
+     <x>440</x>
      <y>260</y>
-     <width>331</width>
+     <width>391</width>
      <height>51</height>
     </rect>
    </property>
@@ -166,9 +166,9 @@ border-radius: 10px;</string>
   <widget class="QLabel" name="Congratulationsto_2">
    <property name="geometry">
     <rect>
-     <x>550</x>
+     <x>530</x>
      <y>420</y>
-     <width>171</width>
+     <width>211</width>
      <height>51</height>
     </rect>
    </property>

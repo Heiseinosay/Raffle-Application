@@ -1,12 +1,19 @@
 #include "inputform.h"
 #include "ui_inputform.h"
+#include "dbmanager.h"
 #include <QMessageBox>
-
+#include <QPushButton>
+#include <QLineEdit>
+#include <QGroupBox>
+#include <QLabel>
 #include <QPixmap>
+
 InputForm::InputForm(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::InputForm)
 {
+
+
     ui->setupUi(this);
     //DropDown
     ui->PrizeSelectionMode->addItem("Random");
@@ -30,10 +37,27 @@ InputForm::InputForm(QWidget *parent) :
     ui->logo->setPixmap(pix.scaled(50, 50,Qt::KeepAspectRatio));
 
     //Name Line Edit
-    ui->LineEditName1->setDisabled(true);
+    ui->ContestantName->setDisabled(true);
 
+    ui->ContestantArea->setFrameShape(QFrame::NoFrame);
+    QVBoxLayout *postsLayout = new QVBoxLayout(ui->ContestantArea);
 
-
+    postsLayout->setSizeConstraint(QLayout::SetMinAndMaxSize);
+    qDebug() << "works here 2";
+    //QString *dbcontent = dbm.selectEntry("contestants");
+    QString *dbcontent = DbManager::selectEntry("contestants");
+    QLabel *label;
+    //qDebug() << dbcontent;
+    //QGroupBox *contest = new QGroupBox(ui->ContestantArea);
+    QGroupBox *contest;
+    for (int i = 0; i < (int) sizeof(dbcontent); i++) {
+        qDebug() << "yes bueno";
+        //label = new QLabel(dbcontent[i]);
+        contest = new QGroupBox(ui->Contestant);
+        qDebug() << dbcontent[i];
+        postsLayout->addWidget(contest);
+        ui->ContestantArea->widget()->setLayout(postsLayout);
+    }
 }
 
 InputForm::~InputForm()

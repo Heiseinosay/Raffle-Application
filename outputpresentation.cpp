@@ -1,5 +1,5 @@
 #include "outputpresentation.h"
-#include "ui_outputpresentation.h"
+//#include "ui_outputpresentation.h"
 
 #include "inputform.h"
 
