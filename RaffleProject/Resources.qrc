@@ -20,5 +20,8 @@
         <file>img/GreenBg.jpg</file>
         <file>img/PinkBg.jpg</file>
         <file>img/RedBg.jpg</file>
+        <file>img/wave .png</file>
+        <file>img/people.jpg</file>
+        <file>img/wave mirror.png</file>
     </qresource>
 </RCC>
